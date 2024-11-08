@@ -1,27 +1,69 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* globals.css */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --primary-bg-color: #333;
+  --primary-text-color: #fff;
+  --secondary-bg-color: #303035;
+  --secondary-text-color: #333;
+  --light-text-color: #666;
+  --accent-color: #555;
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  background-image: url('/images/background.jpg'); /* ตรวจสอบว่าเส้นทางถูกต้อง */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body, h1, h2, p, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #212529;
+  padding: 10px 20px;
+}
+
+nav .logo {
+  margin-right: auto; /* ให้โลโก้อยู่ทางซ้ายสุด */
+}
+
+nav .link, nav .profile {
+  display: flex;
+  align-items: center;
+}
+
+nav .link a, nav .profile a {
+  color: #B6B5B6;
+  text-decoration: none;
+  margin-right: 5px; /* ลดระยะห่างระหว่างลิงก์ */
+  font-size: 15px;
+  padding: 8px 16px; /* ลด padding ของลิงก์ */
+}
+
+nav .profile {
+  background-color: #343637;
+  padding: 3px 16px; /* ลด padding ของโปรไฟล์ */
+  border-radius: 20px;
+}
+
+nav a:hover {
+  color: #57CFE4;
+}
+
+.profileImage {
+  border-radius: 50%;
+  margin-left: 10px;
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
 }

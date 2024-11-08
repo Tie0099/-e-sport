@@ -1,0 +1,65 @@
+/* ManagPeairingInformation.module.css */
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tableContainer {
+    margin-top: 20px;
+  }
+  
+  .tableTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .th, .td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+  }
+  
+  .th {
+    background-color: #007bff;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .tr:last-of-type {
+    border-bottom: none;
+  }
+  
+  .tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .td {
+    color: #333;
+  }
+  

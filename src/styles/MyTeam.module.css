@@ -1,0 +1,357 @@
+.profileContainer {
+    display: flex;
+    height: 100vh;
+    background-color: #2c2f33;
+    color: white;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #23272a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+/* ปุ่มใน Sidebar */
+.sidebarButton {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #343637;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebarButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    transition: left 0.6s ease;
+}
+
+.sidebarButton:hover::before {
+    left: 100%;
+}
+
+.sidebarButton:hover {
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.7), rgba(31, 215, 232, 0.85));
+    color: white;
+    transform: translateY(-3px);
+}
+
+.sidebarButton:active {
+    transform: scale(0.95);
+}
+
+.active {
+    color: #57cfe4;
+}
+.logoutButton {
+    width: 100%;
+    padding: 12px;
+    margin-top: auto;
+    background-color: #f04747;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logoutButton:hover {
+    background-color: white;
+    color: #f04747;
+    transform: translateY(-3px);
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teamBox {
+    background-color: #40444b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.teamTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+.teamTable th,
+.teamTable td {
+    padding: 15px;
+    text-align: center;
+}
+
+.teamTable th {
+    background-color: #343637;
+    color: #fff;
+}
+
+.teamAvatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.addButton {
+    background: none;
+    border: none;
+    color: #57cfe4;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.formOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* เพิ่มการเลื่อนในแนวตั้ง */
+}
+
+.formContainer {
+    background: white;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    text-align: center;
+    max-height: 80vh; /* จำกัดความสูงสูงสุด */
+    overflow-y: auto; /* ทำให้สามารถเลื่อนในแนวตั้งได้ */
+}
+
+.addTeamForm .formGroup {
+    margin-bottom: 15px;
+}
+
+.addTeamForm label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.addTeamForm input {
+    width: 97%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.formButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitButton {
+    background-color: #40cce5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 90px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #62c2d3;
+}
+
+.cancelButton {
+    background-color: #f04747;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 90px;
+    cursor: pointer;
+}
+
+.cancelButton:hover {
+    background-color: #f66767;
+}
+
+.imageLabel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: #ffffff;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.imageUploadContainer {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: #000 solid 1px;
+    overflow: hidden;
+}
+
+.imagePlaceholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uploadedImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imageLabel i {
+    font-size: 2em;
+    color: #ccc;
+}
+
+.imageLabel span {
+    color: #ccc;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.imageInput {
+    display: none;
+}
+
+.iconColumn i {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.userPlus:hover {
+    color: #82dee2;
+}
+
+.edit:hover {
+    color: #f0ad4e;
+}
+
+.trash:hover {
+    color: #d9534f;
+}
+
+.memberRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.memberRow div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.memberRow input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 90%;
+    font-size: 13px;
+}
+
+.memberRow label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.memberRow button {
+    background-color: #f04747;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    height: 35px;
+    align-self: flex-end;
+}
+
+.memberRow button:hover {
+    background-color: #d9534f;
+}
+
+.addmember {
+    margin-bottom: 10px;
+    background-color: #454545;
+    color: #fff;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+}
+
+.addmember:hover {
+    background-color: #fff;
+    color: #454545ff;
+}
+
+.teamRow {
+    cursor: pointer;
+}
+
+.membersRow {
+    background-color: #3b3f45;
+}
+
+.memberList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.memberList li {
+    padding: 6px 0;
+    color: #57cfe4;
+}

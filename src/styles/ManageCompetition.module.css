@@ -1,0 +1,286 @@
+/* ManageCompetition.module.css */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .th, .td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+  }
+  
+  .th {
+    background-color: #007bff;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .tr:last-of-type {
+    border-bottom: none;
+  }
+  
+  .tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .td {
+    color: #333;
+  }
+  
+  .addButton {
+    background-color: #00BFA6;
+    padding: 10px 25px;
+    border: 2px solid #00BFA6;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .addButton:hover {
+    background-color: #fff;
+    color: #00BFA6;
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background-color: #fff;
+    padding: 20px;
+    width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .competitionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .label {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #333;
+    text-align:left;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .dateContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dateInput {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dateInput:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .submitButton {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancelButton {
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancelButton:hover {
+    background-color: #cc0000;
+  }
+  
+  .editButton, .deleteButton, .viewButton {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .editButton {
+    background-color: #ffec43;
+    color: #090909;
+    border-radius: 5px;
+  }
+  
+  .editButton:hover {
+    background-color: #fff;
+    color: #ffec43;
+  }
+  
+  .deleteButton {
+    background-color: #ff3e3e;
+    color: #090909;
+    border-radius: 5px;
+  }
+  
+  .deleteButton:hover {
+    background-color: #fff;
+    color: #ff3e3e;
+  }
+  
+  .viewButton {
+    background-color: #3e3eff;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .viewButton:hover {
+    background-color: #fff;
+    color: #3e3eff;
+  }
+  
+  /* Styles for the delete confirmation modal */
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .confirmButton, .cancelButton {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirmButton {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .confirmButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancelButton {
+    background-color: red;
+    color: #fff;
+  }
+  
+  .cancelButton:hover {
+    background-color: #cc0000;
+  }
+  /* การจัดการปุ่มแบ่งหน้า */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pageButton {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pageButton:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.activePage {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: default;
+}

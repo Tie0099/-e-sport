@@ -1,0 +1,327 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.searchInput {
+  width: 20%;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin-left: 80%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #9a8ca3;
+}
+
+.addIcon {
+  background-color: #00BFA6;
+  box-sizing: border-box;
+  margin-left: 82.7%;
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2px solid #00BFA6;
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+  overflow: hidden;
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 1;
+}
+
+.addIcon:hover {
+  transition: .4s;
+  background-color: #fff;
+  color: #00BFA6;
+}
+
+.userForm {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.addButton {
+  margin-top: 10px;
+  margin-right: 100px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px;
+  display: inline-block;
+  background-color: rgb(35, 184, 35);
+  color: white;
+}
+
+.addButton:hover {
+  background-color: rgb(3, 105, 3);
+}
+
+.cancelButton {
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px;
+  display: inline-block;
+  margin-left: auto;
+  background-color: red;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: rgb(133, 6, 6);
+}
+
+.formButtons {
+  text-align: center;
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.userTable th, .userTable td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+.userTable th {
+  background-color: #007bff;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.userTable tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.userTable tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.userTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.editIcon, .deleteIcon {
+  background-color: #ffec43;
+  color: #090909;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+}
+
+.editIcon:hover {
+  background-color: #fff;
+  color: #ffec43;
+}
+
+.deleteIcon {
+  background-color: #ff3e3e;
+  color: #090909;
+}
+
+.deleteIcon:hover {
+  background-color: #fff;
+  color: #ff3e3e;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.confirmButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.confirmdelete {
+  background-color: #ff3e3e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.confirmdelete:hover {
+  color: #ff3e3e;
+  background-color: #fff;
+}
+
+.dataadmin {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+.confirmDeleteModal {
+  width: 30%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.confirmDeleteModal h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #e74c3c;
+}
+
+.confirmDeleteModal p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.confirmDeleteModal .icon {
+  font-size: 50px;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.confirmButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.confirmDeleteButton {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  flex: 1;
+}
+
+.confirmDeleteButton:hover {
+  background-color: #c0392b;
+}
+
+.cancelButton {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  flex: 1;
+}
+
+.cancelButton:hover {
+  background-color: #aaa;
+}
+
+.alertModalContent {
+  width: 30%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.alertModalContent p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.alertModalContent .icon {
+  font-size: 50px;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+.confirmButtons button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #007bff; /* ปรับสีพื้นหลังตามที่คุณต้องการ */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.confirmButtons button:hover {
+  background-color: #0056b3; /* ปรับสีพื้นหลังเมื่อวางเมาส์ */
+}
+
+.confirmButtons .cancelButton {
+  background-color: #ccc;
+  color: #000;
+}
+
+.confirmButtons .cancelButton:hover {
+  background-color: #aaa;
+}

@@ -1,0 +1,160 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.th, .td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd; /* เพิ่มเส้นขอบที่ชัดเจน */
+}
+
+.th {
+  background-color: #007bff;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.tr:last-of-type {
+  border-bottom: none;
+}
+
+.tr:hover {
+  background-color: #f1f1f1;
+}
+
+.td {
+  color: #333;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pageButton {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pageButton:hover {
+  background-color: #f1f1f1;
+}
+
+.pageButton:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #e9ecef;
+}
+
+.viewButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0070f3;
+}
+
+.viewButton:hover {
+  color: #005bb5;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px; /* เพิ่มขนาดของ modal */
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+
+.selectDropdown {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.closeButton {
+  padding: 10px 20px;
+  background-color: #ec4046;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block; /* ทำให้ปุ่มอยู่ในบรรทัดใหม่ */
+  width: 100px; /* กำหนดขนาดของปุ่ม */
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.closeButton:hover {
+  background-color: #0056b3;
+}

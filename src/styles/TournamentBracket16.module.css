@@ -1,0 +1,98 @@
+.tournament {
+    margin: 20px 0;
+    display: flex;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Pair1_1, .Pair1_2, .Pair1_3, .Pair1_4, .Pair1_5, .Pair1_6, .Pair1_7, .Pair1_8 {
+    margin-bottom: 30px;
+}
+
+.connectors {
+    margin-top: 55px;
+    padding-left: 50px;
+}
+
+.Pair2_1, .Pair2_2, .Pair2_3, .Pair2_4 {
+    margin-bottom: 150px;
+}
+
+.finalRounds {
+    margin-top: 150px;
+    padding-left: 50px;
+}
+
+.Pair3_1, .Pair3_2 {
+    margin-bottom: 50px;
+}
+.Pair3_2{
+    margin-top: 170px;
+}
+
+.championshipRound {
+    margin-top: 250px;
+    padding-left: 50px;
+}
+
+.Pair4_1, .Pair4_2 {
+    margin-bottom: 50px;
+}
+
+.Pair1_1 > div, .Pair1_2 > div, .Pair1_3 > div, .Pair1_4 > div, 
+.Pair1_5 > div, .Pair1_6 > div, .Pair1_7 > div, .Pair1_8 > div,
+.Pair2_1 > div, .Pair2_2 > div, .Pair2_3 > div, .Pair2_4 > div,
+.Pair3_1 > div, .Pair3_2 > div, .Pair4_1 > div, .Pair4_2 > div {
+    display: flex;
+    justify-content: space-between;
+}
+.Pair4_1{
+    margin-top: 30px;
+}
+.Pair4_2{
+    margin-top: 100px;
+}
+.match {
+    flex: 1; /* คุมความกว้างของช่องอย่างยืดหยุ่น */
+    min-width: 120px; /* กำหนดขนาดขั้นต่ำของช่อง */
+    max-width: 150px; /* กำหนดขนาดสูงสุดของช่อง */
+    padding: 10px; /* ลดขนาด padding */
+    font-size: 14px; /* ปรับขนาดตัวอักษร */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    text-overflow: ellipsis;
+}
+
+.score {
+    width: 30px; /* ปรับขนาด width */
+    height: 30px; /* ปรับขนาด height ให้เป็น square */
+    padding: 5px; /* ปรับขนาด padding */
+    font-size: 14px; /* ปรับขนาดตัวอักษร */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+}
+.Semifinals{
+    margin-top: 175px;
+    margin-left: 45px;
+}
+.OOO{
+    margin-bottom: 400px;
+}
+.Pair4_1{
+    margin-top: 150px;
+}
+.Pair4_2{
+    margin-top: 150px;
+}

@@ -1,0 +1,10 @@
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.img-container {
+    /* width: 42%; */
+    height: auto;
+    margin: 3px auto;
+    /* border-radius: 5rem;  */
+}

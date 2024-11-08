@@ -1,0 +1,70 @@
+.container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 5px 0;
+}
+
+.bracket {
+    text-align: center;
+}
+
+.bracket img {
+    max-width: 100%;
+    height: auto;
+}
+.teamList ul {
+    list-style: none;
+    padding: 0;
+}
+/* CompetitionDetails.module.css */
+
+.teamList {
+    padding: 10px;
+    width: 200px; /* หรือปรับตามความเหมาะสม */
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    height: 300px; /* กำหนดความสูง */
+    overflow-y: auto; /* แสดง scrollbar เมื่อมีเนื้อหามากกว่าความสูงที่กำหนด */
+    position: sticky; /* กำหนดให้ตำแหน่งเป็น sticky */
+    top: 20px; /* ตำแหน่งที่จะให้ "ติด" เมื่อเลื่อนหน้าจอ */
+}
+.teamList li {
+    padding: 8px;
+    border: 2px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+}
+.noTeam{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(133, 133, 133);
+}
+.flexContainer {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}

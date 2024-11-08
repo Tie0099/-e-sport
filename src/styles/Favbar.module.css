@@ -1,0 +1,48 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #212529;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.link, .profile {
+    display: flex;
+    align-items: center;
+}
+
+.link a {
+    color: #B6B5B6;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 15px;
+    padding: 8px 16px;
+}
+
+.profile {
+    padding: 3px 16px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile a {
+    display: flex;
+    align-items: center;
+    color: #B6B5B6;
+    text-decoration: none;
+}
+
+.profileImage {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 8px;
+}
+
+.link a:hover, .profile a:hover {
+    color: #57CFE4;
+}

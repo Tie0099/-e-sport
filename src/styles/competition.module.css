@@ -1,0 +1,272 @@
+/* โครงสร้างหลัก */
+.profileContainer {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #23272a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.sidebarButton {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #343637;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebarButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    transition: left 0.6s ease;
+}
+
+.sidebarButton:hover::before {
+    left: 100%;
+}
+
+.sidebarButton:hover {
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.7), rgba(31, 215, 232, 0.85));
+    color: white;
+    transform: translateY(-3px);
+}
+
+.sidebarButton:active {
+    transform: scale(0.95);
+}
+
+.active {
+    color: #57cfe4;
+}
+
+.logoutButton {
+    width: 100%;
+    padding: 12px;
+    margin-top: auto;
+    background-color: #f04747;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logoutButton:hover {
+    background-color: white;
+    color: #f04747;
+    transform: translateY(-3px);
+}
+
+/* ส่วนหลัก */
+.mainContainer {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #2c2f33;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.competitionContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #23272a;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.competitionCard {
+    background-color: #343637;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.competitionTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.competitionDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.competitionDetailsRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.competitionDetails span {
+    margin: 0 10px;
+}
+
+.competitionDetails button {
+    background-color: #7289da;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.competitionDetails button:hover {
+    background-color: #5b6eae;
+}
+
+/* ส่วนฟอร์ม */
+.formOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    background-color: #23272a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.formTitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submitButton, .cancelButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.submitButton {
+    background-color: #43b581;
+    color: white;
+}
+
+.submitButton:hover {
+    background-color: #36a267;
+}
+
+.cancelButton {
+    background-color: #f04747;
+    color: white;
+}
+
+.cancelButton:hover {
+    background-color: #c23b3b;
+}
+
+.imagePreviewContainer {
+    margin-bottom: 20px;
+}
+
+.imageUploadContainer {
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagePlaceholder {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.imagePreview {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registerButton{
+    background-color: #7289da;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.registerButton:hover{
+    background-color: #5b6eae;
+}

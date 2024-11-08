@@ -1,0 +1,129 @@
+.tournament {
+    margin: 20px 0;
+    display: flex;
+    padding: 20px;
+    margin-right: -150px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Pair1_1, .Pair1_2, .Pair1_3, .Pair1_4, 
+.Pair1_5, .Pair1_6, .Pair1_7, .Pair1_8,
+.Pair1_9, .Pair1_10, .Pair1_11, .Pair1_12,
+.Pair1_13, .Pair1_14, .Pair1_15, .Pair1_16 {
+    margin-bottom: 15px;
+}
+
+.connectors {
+    margin-top: 50px;
+    padding-left: 50px;
+}
+.Pair2_2{
+    margin-top: 110px;
+}
+.Pair2_3{
+    margin-top: 115px;
+}
+.Pair2_4{
+    margin-top: 120px;
+}
+.Pair2_5{
+    margin-top: 108px;
+}
+
+.Pair2_1, .Pair2_2, .Pair2_3, .Pair2_4, 
+.Pair2_5, .Pair2_6, .Pair2_7, .Pair2_8 {
+    margin-bottom: 100px;
+}
+.Pair2_6, .Pair2_7, .Pair2_8{
+    margin-top: 115px;
+}
+.finalRounds {
+    margin-top: 145px;
+    padding-left: 50px;
+}
+.Pair3_1, .Pair3_2, .Pair3_3, .Pair3_4 {
+    margin-bottom: 310px;
+}
+.Pair3_2, .Pair3_3, .Pair3_4{
+    margin-top: 260px;
+}
+.Pair3_4{
+    margin-top: 320px;
+}
+.championshipRound {
+    margin-top: 330px;
+    padding-left: 50px;
+}
+
+.Pair4_1, .Pair4_2 {
+    margin-bottom: 50px;
+}
+.Pair4_2{
+    margin-top: 700px;
+    
+}
+.Pair5_1, .Pair5_2{
+    margin-bottom: 50px;
+}
+.Pair5_1{
+    margin-top: 300px;
+}
+
+.Pair1_1 > div, .Pair1_2 > div, .Pair1_3 > div, .Pair1_4 > div, 
+.Pair1_5 > div, .Pair1_6 > div, .Pair1_7 > div, .Pair1_8 > div,
+.Pair1_9 > div, .Pair1_10 > div, .Pair1_11 > div, .Pair1_12 > div,
+.Pair1_13 > div, .Pair1_14 > div, .Pair1_15 > div, .Pair1_16 > div,
+.Pair2_1 > div, .Pair2_2 > div, .Pair2_3 > div, .Pair2_4 > div,
+.Pair2_5 > div, .Pair2_6 > div, .Pair2_7 > div, .Pair2_8 > div,
+.Pair3_1 > div, .Pair3_2 > div, .Pair3_3 > div, .Pair3_4 > div,
+.Pair4_1 > div, .Pair4_2 > div, .Pair5_1 > div, .Pair5_2 > div {
+    display: flex;
+    justify-content: space-between;
+}
+.match {
+    flex: 1; /* คุมความกว้างของช่องอย่างยืดหยุ่น */
+    min-width: 120px; /* กำหนดขนาดขั้นต่ำของช่อง */
+    max-width: 150px; /* กำหนดขนาดสูงสุดของช่อง */
+    padding: 10px; /* ลดขนาด padding */
+    font-size: 14px; /* ปรับขนาดตัวอักษร */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    text-overflow: ellipsis;
+}
+
+.score {
+    width: 30px; /* ปรับขนาด width */
+    height: 30px; /* ปรับขนาด height ให้เป็น square */
+    padding: 5px; /* ปรับขนาด padding */
+    font-size: 14px; /* ปรับขนาดตัวอักษร */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+}
+.specialRounds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 400px; /* หรือเพิ่มระยะห่างตามที่ต้องการ */
+}
+.Quarterfinal{
+    margin-top: 145px;
+    margin-left: 45px;
+}
+.Semifinal{
+    margin-left: 45px;
+    margin-top: 370px;
+}
+.finalRounds{
+    margin-top: 400px;
+}
